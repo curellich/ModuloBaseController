@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.19)
+project(ConversionAMovimientoDiscreto)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(ConversionAMovimientoDiscreto main.cpp ConversionMovimientoDiscreto.cpp ConversionMovimientoDiscreto.h)
