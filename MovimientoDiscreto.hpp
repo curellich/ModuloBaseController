@@ -14,6 +14,7 @@ class MovimientoDiscreto {
 
 private:
     Movimiento rueda;
+    
     static Movimiento array[12];
 
     //Funciones de utileria
