@@ -2,18 +2,16 @@
 
 using namespace std;
 
-#include "ConversionMovimientoDiscreto.h"
+#include "MovimientoDiscreto.hpp"
 
 int main() {
 
-    ConversionMovimientoDiscreto movimiento1((0.6691 * 0.7), (0.7431 * 0.7));
+    MovimientoDiscreto movimiento1;
 
-    cout << movimiento1 << endl;
+    movimiento1.realizarMovimientoDiscreto((-0.1564 * 0.6), (0.9876 * 0.6));
 
-    cout<<"Angulo: "<<movimiento1.calcularAngulo();
-    cout<<" Modulo: "<<movimiento1.calcularModulo() << endl;
+    cout << "Rueda izquierda: " << movimiento1.getRueda().izquierda << " Rueda derecha: "
+         << movimiento1.getRueda().derecha << endl;
 
-    cout << "Rueda izquierda: " << movimiento1.devolverMovimientoDiscretizado().izquierda << " Rueda Derecha: "
-         << movimiento1.devolverMovimientoDiscretizado().derecha << endl;
     return 0;
 }
